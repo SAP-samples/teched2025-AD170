@@ -1,47 +1,54 @@
-# Session ID - Session Title
+# AD170 - Build scalable enterprise mobile solutions with SAP Build
+
+## SAP Build
+SAP Build is a business application development and automation solution with a comprehensive suite of low-code, pro-code, and generative AI tools. It helps you build cloud-ready extensions that maximize your investments across your cloud ERP and application ecosystem. Break down silos by giving cross-functional teams tools to develop business applications collaboratively and accelerate time to value with generative AI and prebuilt solutions that help you stay on budget and ahead of schedule. 
+
+<p align="center"><img src="./assets/images/img-sap-build.png" width="100%" /></p>
+
+This hands-on exercise will assist you in learning how to **build mobile applications using SAP Build**.
 
 ## Description
-
-This repository contains the material for the SAP TechEd 2025 session called Session ID - Session Title.  
-
-## Overview
-
-This session introduces attendees to...
+Accelerate development by using **SAP Build** to consume a SAP Cloud Application Programming (CAP) Model service for mobile development. Build a native, cross-platform mobile application using **SAP Mobile Development Kit** and enhance it using generativce AI capabilities via Joule Assistant.
 
 ## Requirements
+In order to complete the session exercises below, first complete the [pre-requisites](./exercises/ex0/README.md).
 
-The requirements to follow the exercises in this repository are...
+## Use Case
+ACME is a popular electronics company. ACME hires call center support representatives to process and manage customer incidents. A call center support representative (Processor) receives a phone call from an existing customer and creates a new incident on behalf of the customer. ACME employs technicians who use mobile apps to process these incidents.
+
+### Incident Creation 
+- Mary reports an issue she is facing with her ACME electronic device.
+- Raj, a support representative, logs the incident using the Incident Management app.
+- Raj records Mary's contact information and issue details.
+
+### Incident Resolution (AD170 - This Hands On Session)
+- Anna, a technician, uses the ACME Technician Incident Management app.
+- Anna views the tasks assigned to her.
+- Anna selects a task to view the details.
+- Anna travels to Mary's location for on-site service.
+- After fixing the issue, Anna uploads a resolution image.
+- Anna requests Mary's digital signature for closing the incident.
+
+## Understand your SAP Cloud Application Programming Backend
+The back-end for this Hands-On session has been created using SAP Cloud Application Programming Model, which in turn connects to a HANA DB. Three entities are defined in the `schema.cds` file and then exposed as a service.
+  
+![LCAP View of the Back-End](./assets/images/img-2.png)
 
 ## Exercises
-
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
-
-## Contributing
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
-
-## Code of Conduct
-Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
+| Exercise Number | Title | Estimated Time (mins) |
+| ---- | ---- | --- |
+| [Exercise 1](./exercises/ex1/README.md) | Run the Starting Application on Your Device | 15 |
+| [Exercise 2](./exercises/ex2/README.md) | Enhance the generated Incidents List and Detail page | 20 |
+| [Exercise 3](./exercises/ex3/README.md) | Modify an Incident Record | 45 |
+| [Exercise 4](./exercises/ex4/README.md) | Enhance your MDK App using Generative AI via Joule | 15 |
 
 ## How to obtain support
-
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
+## Additional Support and Learning Resources
+- Continue your learning with additional [MDK tutorials](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/overview.html#tutorials)
+
+- Check out the SAP Community for [Mobile Development](https://community.sap.com/topics/mobile-technology)
+
 ## License
-Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
