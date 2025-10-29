@@ -39,16 +39,16 @@ The back-end for this Hands-On session has been created using SAP Cloud Applicat
 | ---- | ---- | --- |
 | [Exercise 1](./exercises/ex1/README.md) | Run the Starting Application on Your Device | 15 |
 | [Exercise 2](./exercises/ex2/README.md) | Enhance the generated Incidents List and Detail page | 20 |
-| [Exercise 3](./exercises/ex3/README.md) | Modify an Incident Record | 45 |
+| [Exercise 3](./exercises/ex3/README.md) | Modify an Incident Record | 40 |
 | [Exercise 4](./exercises/ex4/README.md) | Enhance your MDK App using Generative AI via Joule | 15 |
 
 ## How to obtain support
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
 ## Additional Support and Learning Resources
-- Continue your learning with additional [MDK tutorials](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/overview.html#tutorials)
+- Continue your learning with additional [MDK tutorials](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/overview.html#tutorials).
 
-- Check out the SAP Community for [Mobile Development](https://community.sap.com/topics/mobile-technology)
+- Check out the SAP Community for [Mobile Development](https://community.sap.com/topics/mobile-technology).
 
 ## License
 Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.

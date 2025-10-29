@@ -2,7 +2,7 @@
 
 ## Estimated Time
 
-:clock4: 45 minutes
+:clock4: 40 minutes
 
 ## Objective
 
@@ -18,16 +18,15 @@ Incidents are assigned to a Technician by a call center support representative. 
 
 | Exercise Number   | Title                                                 |
 |-------------------|-------------------------------------------------------|
-| [Exercise 3.1](#exercise-31---add-ui-controls-in-a-page-for-modifying-incident-information)      | Add UI Controls in a page for modifying Incident Information  |
-| [Exercise 3.2](#exercise-32---add-a-cancel-button-on-the-update-incident-detail-page)      | Add a Cancel Button on the Update incident Detail page|
-| [Exercise 3.3](#exercise-33---store-the-updated-data-locally)      | Store the updated data locally                        |
-| [Exercise 3.4](#exercise-34---validate-inputs-before-saving-incident-entity)      | Validate Inputs before saving Incident Entity   
-| [Exercise 3.5](#exercise-35---navigate-to-the-incident-edit-page)      | Navigate to the Incident Edit page                     |
-| [Exercise 3.6](#exercise-36---redeploy-the-application)      | Redeploy the application                               |
-| [Exercise 3.7](#exercise-37---update-the-mdk-app-with-new-metadata)      | Update the MDK app with new metadata                   |
+| [Exercise 3.1](#exercise-31---add-ui-controls-in-a-page-for-modifying-incident-information)      | Add UI Controls in a Page for Modifying Incident Information  |
+| [Exercise 3.2](#exercise-32---store-the-updated-data-locally)      | Store the Updated Data Locally                        |
+| [Exercise 3.3](#exercise-33---validate-inputs-before-saving-incident-entity)      | Validate Inputs before Saving Incident Entity   |
+| [Exercise 3.4](#exercise-34---restrict-edit-button-visibility-based-on-incident-status)      | Restrict Edit Button Visibility Based on Incident Status                     |
+| [Exercise 3.5](#exercise-35---redeploy-the-application)      | Redeploy the Application                               |
+| [Exercise 3.6](#exercise-36---update-the-mdk-app-with-new-metadata)      | Update the MDK App with New Metadata                   |
 
 
-### Exercise 3.1 - Add UI Controls in a page for modifying Incident Information
+### Exercise 3.1 - Add UI Controls in a Page for Modifying Incident Information
 
 Both online and offline applications can be modified by users. Online application changes are saved to the backend immediately, while offline applications store the changes locally until they are synced the the backend using an Upload action.
 
@@ -177,33 +176,8 @@ In this step, you'll add fields editable by a technician, including status, ID o
     }
     ```
 
-### Exercise 3.2 - Add a Cancel Button on the Update incident Detail page
 
-While updating the incident details, you want to give the user an option to close the edit page and not save any values entered.
-
-1. In the `Incident_Edit.page`, drag and drop an **Action Bar Item** control to the upper left corner of the action bar.
-
-    ![MDK](images/3.2.1.png)
-
-    >The Action Bar Item is a button that users can use to trigger actions when pressed. You can add an Action Bar Item only to the Action Bar at the top of the page.
-
-2. In the Properties pane, provide the following information:        
-
-    | Property | Value |
-    |----|----|
-    | `Caption` | `Cancel` |
-    | `SystemItem` | Click the **link icon** to open the Object Browser, double-click the **Cancel** type and click **OK**. |
-
-    ![MDK](images/3.2.2.png)
-
-    >System Items are predefined system-supplied icons.
-
-3. Navigate to the **Events** tab. Click the three-dot icon, then click the **Object Browser** and bind it to `CloseModalPage_Cancel.action`. This action will close the current page and terminate any ongoing events.
-
-    ![MDK](images/3.2.3.png)
-
-
-### Exercise 3.3 - Store the updated data locally
+### Exercise 3.2 - Store the Updated Data Locally
 
 While a Technician is updating incident information, such as Status, Device ID, Device Image, and Customer Signature, these details will be communicated to the backend through relevant OData calls based on entity type and their respective OData property types.
 
@@ -370,7 +344,7 @@ To update the `Status` and `DeviceID` properties of the Incident entity, the ODa
 
     ![MDK](images/3.3.23.png) 
 
-### Exercise 3.4 - Validate Inputs before saving Incident Entity
+### Exercise 3.3 - Validate Inputs before Saving Incident Entity
 
 Ensure the technician can only save an incident entity after providing all the required inputs. If they don't, show them an appropriate message. For instance, if they try to submit a record with an empty status, no Device ID, or without a customer signature, they should be prompted with a warning message.
 
@@ -454,36 +428,23 @@ To achieve this, you'll need to implement business logic that validates the inpu
     }
     ```
 
-### Exercise 3.5 - Navigate to the Incident Edit page
+### Exercise 3.4 - Restrict Edit Button Visibility Based on Incident Status  
 
-To navigate from the Incident Detail page to a new page for modifying incident information, you'll add an action bar item on the Incident Details page and link it to a navigation action. When the action bar item is pressed by a technician, it will open the `Incident_Edit.page`.
+The **Edit** button on the Incident Detail page should be visible **only** for incidents that are in the `New` or `In Process` state. If an incident's status is `Closed`, the technician should not be able to modify any details. This behavior should be integrated into your application logic.  
 
-1. In `Incident_Detail.page`, drag and drop an **Action Bar Item** to the upper right of the action bar, placing it before the existing `View Image` item.
-
-    ![MDK](images/3.4.1.png)    
-
-2. In the Properties pane, provide the following information:        
-
-    | Property | Value |
-    |----|----|
-    | `Caption` | `Edit` |
-    | `SystemItem` | Click the **link icon** to open the Object Browser, double-click the **Edit** type and click **OK**. |
-
-    ![MDK](images/3.4.2.png)    
-
-3. The Edit button should only be visible for incidents that are in the `New` or `In Process` state. If an incident's status is `Closed`, the technician should not have any options to change the details. This behavior should be integrated into your application logic. <br/>  Click on `Create a rule` icon for the **Visible** property of Edit action bar item.
+1. In `Incident_Detail.page`, click on `Create a rule` icon for the **Visible** property of **Edit** action bar item.
 
     ![MDK](images/3.4.3.png)   
 
-4. Select **Object Type** as **Rule** and **Folders** as `/MDKApp/Rules/Incident`. Click **OK**.  
+2. Select **Object Type** as **Rule** and **Folders** as `/MDKApp/Rules/Incident`. Click **OK**.  
 
     ![MDK](images/3.1.14.png)
 
-5. Provide the name `EditOptionVisibility` to your rule, and then click **Finish**.
+3. Provide the name `EditOptionVisibility` to your rule, and then click **Finish**.
 
     ![MDK](images/3.4.4.png)  
 
-6. Replace the generated snippet with the following code.
+4. Replace the generated snippet with the following code.
 
     ```JavaScript
     /**
@@ -501,14 +462,7 @@ To navigate from the Incident Detail page to a new page for modifying incident i
     }
     ```
 
-7. Switch back to the `Incident_Detail.page`.
-
-8. Navigate to the **Events** tab. Click the three-dot icon, then select **Object Browser** and bind it to `NavToIncident_Edit.action`. This action will navigate to the page for modifying incident details. 
-
-    ![MDK](images/3.4.5.png)     
-
-
-### Exercise 3.6 - Redeploy the application
+### Exercise 3.5 - Redeploy the Application
 
 Now that you have created the Edit page it is time to deploy the changes to see the result.
 
@@ -517,15 +471,15 @@ Now that you have created the Edit page it is time to deploy the changes to see 
     ![MDK](images/3.6.0.png)
        
 
-### Exercise 3.7 - Update the MDK app with new metadata
+### Exercise 3.6 - Update the MDK App with New Metadata
 
-| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Steps | Android | iOS |
 |---|---|---|
-| 1. Tap the **Check for Updates** option in the `User menu` on the Incident page.| ![MDK](images/3.6.1.png)| ![MDK](images/3.6.2.png)|
-| 2. You will see a `New Version Available!` pop-up. Tap **Now**.| ![MDK](images/3.6.3.png)| ![MDK](images/3.6.4.png)|
-| 3. Navigate to an Incident detail page. <br/><br/> If an incident's status is already `Closed`, you will not see the **Edit** option in the action bar. Instead, you will have the ability to open the working device's image. <br/><br/>  If an incident's status is `New` or `In Process`, you will see the **Edit** option.| ![MDK](images/3.6.5.gif)| ![MDK](images/3.6.6.gif)|
-| 4. Update an Incident. <br/><br/> you can update the status from `New` to `In Process` or `Closed` or from `In Process` to `Closed`. <br/><br/> When updating it to `In Process`, you should be able to enter the ID of the defective device, either by manually typing it or scanning the device's barcode, but you won't have options for uploading a device image or capturing the customer's signature. <br/><br/> When updating it to `Closed`, you should be able to enter the ID of the defective device, either by manually typing it or scanning the device's barcode, and you should also see the options for uploading a device image and capturing customer's signature. <br/><br/> To scan the device's barcode, you can use the below image. <br/><br/><br/><br/> ![MDK](images/3.6.9.png) | ![MDK](images/3.6.7.gif)| ![MDK](images/3.6.8.gif)|
-| 5. Since this is an Offline application, the changes are saved to the local store, which needs to be sent or uploaded to the backend explicitly. <br/><br/> Navigate to the Incident list page, pull down on the incident list to upload changes to the backend, OR click on the user menu icon and select **Sync Changes**. You should see a `Sync Completed` message displayed. | ![MDK](images/3.6.10.png) | ![MDK](images/3.6.11.png)|
+| 1. Tap the **Check for Updates** option in the `User menu` on the Incident page.| <img src="images/3.6.1.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />| <img src="images/3.6.2.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />|
+| 2. You will see a `New Version Available!` pop-up. Tap **Now**.| <img src="images/3.6.3.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />| <img src="images/3.6.4.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />|
+| 3. Navigate to an Incident detail page. <br/><br/> If an incident's status is already `Closed`, you will not see the **Edit** option in the action bar. Instead, you will have the ability to open the working device's image. <br/><br/>  If an incident's status is `New` or `In Process`, you will see the **Edit** option.| <img src="images/3.6.5.gif" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />| <img src="images/3.6.6.gif" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />|
+| 4. Update an Incident. <br/><br/> you can update the status from `New` to `In Process` or `Closed` or from `In Process` to `Closed`. <br/><br/> When updating it to `In Process`, you should be able to enter the ID of the defective device, either by manually typing it or scanning the device's barcode, but you won't have options for uploading a device image or capturing the customer's signature. <br/><br/> When updating it to `Closed`, you should be able to enter the ID of the defective device, either by manually typing it or scanning the device's barcode, and you should also see the options for uploading a device image and capturing customer's signature. <br/><br/> To scan the device's barcode, you can use the below image. <br/><br/><br/><br/> <img src="images/3.6.9.png" alt="MDK" width="400" style="object-fit:contain;" /> | <img src="images/3.6.7.gif" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />| <img src="images/3.6.8.gif" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />|
+| 5. Since this is an Offline application, the changes are saved to the local store, which needs to be sent or uploaded to the backend explicitly. <br/><br/> Navigate to the Incident list page, pull down on the incident list to upload changes to the backend, OR click on the user menu icon and select **Sync Changes**. You should see a `Sync Completed` message displayed. | <img src="images/3.6.10.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/3.6.11.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" />|
 
 ## Summary
 

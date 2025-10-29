@@ -11,10 +11,10 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 | Exercise Number | Title |
 | --- | --- |
 | [Exercise 1.1](#exercise-11---clone-the-mdk-project-in-sap-build-lobby) | Clone the MDK Project in SAP Build Lobby |
-| [Exercise 1.2](#exercise-12---provide-your-assigned-service-worker-id-to-filter-related-incidents) | Provide your assigned Service Worker ID to filter related Incidents |
-| [Exercise 1.3](#exercise-13---deploy-the-application) | Deploy the application |
-| [Exercise 1.4](#exercise-14---display-the-qr-code-for-onboarding-the-mobile-app) | Display the QR code for onboarding the Mobile app |
-| [Exercise 1.5](#exercise-15---run-the-app) | Run the app |
+| [Exercise 1.2](#exercise-12---provide-your-assigned-service-worker-id-to-filter-related-incidents) | Provide Your Assigned Service Worker ID to Filter Related Incidents |
+| [Exercise 1.3](#exercise-13---deploy-the-application) | Deploy the Application |
+| [Exercise 1.4](#exercise-14---display-the-qr-code-for-onboarding-the-mobile-app) | Display the QR Code for onboarding the Mobile App |
+| [Exercise 1.5](#exercise-15---run-the-app) | Run the App |
 
 ### Exercise 1.1 - Clone the MDK Project in SAP Build Lobby
 
@@ -57,7 +57,7 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 
     >![MDK](images/1.1.6.png)  
 
-### Exercise 1.2 - Provide your assigned Service Worker ID to filter related Incidents
+### Exercise 1.2 - Provide Your Assigned Service Worker ID to Filter Related Incidents
 
 The cloned project is presented in a storyboard. The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components. 
 
@@ -71,7 +71,7 @@ Since the cloned project is not yet connected to SAP Mobile Services, the runtim
 
     ![MDK](images/1.2.2.png)  
 
-### Exercise 1.3 - Deploy the application
+### Exercise 1.3 - Deploy the Application
 
 You will now deploy the application definitions to SAP Mobile Services.
 
@@ -119,7 +119,7 @@ You will now deploy the application definitions to SAP Mobile Services.
 
     ![MDK](images/1.3.11.png) 
 
-### Exercise 1.4 - Display the QR code for onboarding the Mobile app
+### Exercise 1.4 - Display the QR Code for onboarding the Mobile App
 
 You will now run the initial application on the Mobile client installed on your device by scanning the on-boarding QR code. 
 
@@ -131,22 +131,22 @@ You will now run the initial application on the Mobile client installed on your 
 
     ![MDK](images/1.4.2.png)
 
-### Exercise 1.5 - Run the app
+### Exercise 1.5 - Run the App
 
-| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
+| Steps | Android | iOS |
 | --- | --- | --- |
-| 1. Launch **`Mobile Svcs`** app on your mobile device. Tap **Agree** on `End User License Agreement and Privacy Statement`. | ![MDK](images/1.5.1.png) | ![MDK](images/1.5.2.png) |
-| 2. Tap **Scan** to start the device camera for scanning the onboarding QR code and grant permission to access the camera. Please note, if you already have the MDK client on-boarded, tap *Get Started* and *Scan new QR code* to continue. | ![MDK](images/1.5.3.png) | ![MDK](images/1.5.4.png) |
-| 3. Once the scan succeeds, tap **Continue**. | ![MDK](images/1.5.5.png) | ![MDK](images/1.5.6.png) |
+| 1. Launch **`Mobile Svcs`** app on your mobile device. Tap **Agree** on `End User License Agreement and Privacy Statement`. | <img src="images/1.5.1.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.2.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 2. Tap **Scan** to start the device camera for scanning the onboarding QR code and grant permission to access the camera. Please note, if you already have the MDK client on-boarded, tap *Get Started* and *Scan new QR code* to continue. | <img src="images/1.5.3.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.4.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 3. Once the scan succeeds, tap **Continue**. | <img src="images/1.5.5.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.6.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
 | 4. Click `tdct3ched1.accounts.ondemand.com` to continue for dry run. SAP IT will remove the default identity provider couple of days before TechEd starts. This step won't be needed anymore. [**to be updated**] |  | |
-| 4. Use the login credentials that were shared with you during the session to log into SAP BTP. | ![MDK](images/1.5.7.png) | ![MDK](images/1.5.8.png) |
-| 5. Create a passcode that is at least 5 characters long to unlock the app, and then tap **Next**. | ![MDK](images/1.5.9.png) | ![MDK](images/1.5.10.png) |
-| 6. Confirm the passcode and tap **Done**. | ![MDK](images/1.5.11.png) | ![MDK](images/1.5.12.png) |
-| 7. You have the option to enable Biometric Authentication for faster access to app data. On iOS, tap **Enable** if you wish to use this feature. On Android, provide your biometric information. | ![MDK](images/1.5.13.png) | ![MDK](images/1.5.14.png) |
-| 8. Tap **Next**. If you want your MDK client to send you notifications, tap **Allow**, otherwise, tap **Don't allow**. | ![MDK](images/1.5.15.png) ![MDK](images/1.5.16.png) | NA |
-| 9. Tap on **Now** to accept the deployed metadata definitions. | ![MDK](images/1.5.17.png) | ![MDK](images/1.5.18.png) |
-| 10. After accepting the app update, the offline store will initialize. You'll see a list of incidents assigned to you and a user menu icon on the main page. The user menu includes the following items:<br/><br/>- **Sync Changes:** This allows you to upload any local changes from the Mobile client to the backend and download any delta changes from the backend to the Mobile client.<br/><br/>- **Support:** This provides an easy way for users to contact support via a contact cell. The contact information is defined in the global settings.<br/><br/>- **Activity Log** option on the Support page allows the user to toggle client logging on or off, set the log level, set tracing categories, toggle OData tracing and, if enabled in the Mobile Services application, upload the current client logs. <br/><br/>- **Check for Updates:** This checks if new Metadata has been deployed to the Mobile Services App Update. If new Metadata is found, it will be downloaded and prompt the user to apply the changes.<br/><br/>- **About:** This page displays the current user/device ID, Application Name, Metadata version, and Client version information.<br/><br/>- **Logout:** This completely resets the client, erasing any downloaded data and application Metadata, and returns the user to the license agreement screen. | ![MDK](images/1.5.19.png) | ![MDK](images/1.5.20.png) |
-| 11. Tap on any of the incidents to navigate to the detail page, where you'll find more information about the incident. You can also access the customer's address via a maps application. If the incident is marked as `closed`, an option to view the image of the defective device will be available. | ![MDK](images/1.5.21.gif) | ![MDK](images/1.5.22.gif) |
+| 4. Use the login credentials that were shared with you during the session to log into SAP BTP. | <img src="images/1.5.7.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.8.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 5. Create a passcode that is at least 5 characters long to unlock the app, and then tap **Next**. | <img src="images/1.5.9.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.10.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 6. Confirm the passcode and tap **Done**. | <img src="images/1.5.11.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.12.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 7. You have the option to enable Biometric Authentication for faster access to app data. On iOS, tap **Enable** if you wish to use this feature. On Android, provide your biometric information. | <img src="images/1.5.13.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.14.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 8. Tap **Next**. If you want your MDK client to send you notifications, tap **Allow**, otherwise, tap **Don't allow**. | <img src="images/1.5.15.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> <img src="images/1.5.16.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | NA |
+| 9. Tap on **Now** to accept the deployed metadata definitions. | <img src="images/1.5.17.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.18.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 10. After accepting the app update, the offline store will initialize. You'll see a list of incidents assigned to you and a user menu icon on the main page. The user menu includes the following items:<br/><br/>- **Sync Changes:** This allows you to upload any local changes from the Mobile client to the backend and download any delta changes from the backend to the Mobile client.<br/><br/>- **Support:** This provides an easy way for users to contact support via a contact cell. The contact information is defined in the global settings.<br/><br/>- **Activity Log** option on the Support page allows the user to toggle client logging on or off, set the log level, set tracing categories, toggle OData tracing and, if enabled in the Mobile Services application, upload the current client logs. <br/><br/>- **Check for Updates:** This checks if new Metadata has been deployed to the Mobile Services App Update. If new Metadata is found, it will be downloaded and prompt the user to apply the changes.<br/><br/>- **About:** This page displays the current user/device ID, Application Name, Metadata version, and Client version information.<br/><br/>- **Logout:** This completely resets the client, erasing any downloaded data and application Metadata, and returns the user to the license agreement screen. | <img src="images/1.5.19.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.20.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| 11. Tap on any of the incidents to navigate to the detail page, where you'll find more information about the incident. You can also access the customer's address via a maps application. If the incident is marked as `closed`, an option to view the image of the defective device will be available. | <img src="images/1.5.21.gif" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.22.gif" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
 
 ## Summary
 

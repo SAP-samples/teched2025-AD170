@@ -10,11 +10,11 @@ In this exercise, you'll add a Profile Header UI control to the Incident detail 
 
 | Exercise Number   | Title                                                 |
 |-------------------|-------------------------------------------------------|
-| [Exercise 2.1](#exercise-21---replace-the-existing-object-header-with-profile-header-ui-control)      | Replace the existing Object Header with Profile Header UI control  |
-| [Exercise 2.2](#exercise-22---redeploy-the-application)      | Redeploy the application  |
-| [Exercise 2.3](#exercise-23---update-the-mdk-app-with-new-metadata)      | Update the MDK app with new metadata  |
+| [Exercise 2.1](#exercise-21---replace-the-existing-object-header-with-profile-header-ui-control)      | Replace the Existing Object Header with Profile Header UI Control  |
+| [Exercise 2.2](#exercise-22---redeploy-the-application)      | Redeploy the Application  |
+| [Exercise 2.3](#exercise-23---update-the-mdk-app-with-new-metadata)      | Update the MDK App with New Metadata  |
 
-### Exercise 2.1 - Replace the existing Object Header with Profile Header UI control
+### Exercise 2.1 - Replace the Existing Object Header with Profile Header UI Control
 
 A Profile header UI control furnishes additional information and enhances access to various communication methods with a customer.
 
@@ -65,7 +65,7 @@ A Profile header UI control furnishes additional information and enhances access
 
     ![MDK](images/2.1.9.png) 
 
-### Exercise 2.2 - Redeploy the application
+### Exercise 2.2 - Redeploy the Application
 
 Now that you have completed the changes to the Incident Detail page, it's time to deploy the changes and see the result.
 
@@ -74,14 +74,13 @@ Click the **Deploy** option in the editor's header area to deploy your changes t
 ![MDK](images/2.2.1.png) 
 
 
-### Exercise 2.3 - Update the MDK app with new metadata
+### Exercise 2.3 - Update the MDK App with New Metadata
 
-| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Steps | Android | iOS |
 |---|---|---|
-| 1. Tap the **Check for Updates** option in the `User menu` on the Incidents page.| ![MDK](images/2.3.1.png)| ![MDK](images/2.3.2.png)|
-| 2. You will see a `New Version Available!` pop-up.  Tap **Now**.| ![MDK](images/2.3.3.png)| ![MDK](images/2.3.4.png)|
-| 3. On the Detail page, a profile header will display the customer's details and communication items. This will allow you to email, make a phone call, or send a message to the customer.| ![MDK](images/2.3.5.png)| ![MDK](images/2.3.6.png)|
-
+| 1. Tap the **Check for Updates** option in the `User menu` on the Incidents page. | <img src="images/2.3.1.png" alt="MDK" width="600" style="max-height:1180px; object-fit:contain; vertical-align:middle;" /> | <img src="images/2.3.2.png" alt="MDK" width="720" style="max-height:1180px; object-fit:contain; vertical-align:middle;" /> |
+| 2. You will see a `New Version Available!` pop-up. Tap **Now**. | <img src="images/2.3.3.png" alt="MDK" width="600" style="max-height:1180px; object-fit:contain; vertical-align:middle;" /> | <img src="images/2.3.4.png" alt="MDK" width="720" style="max-height:1180px; object-fit:contain; vertical-align:middle;" /> |
+| 3. On the Detail page, a profile header will display the customer's details and communication items. This will allow you to email, make a phone call, or send a message to the customer. | <img src="images/2.3.5.png" alt="MDK" width="600" style="max-height:1180px; object-fit:contain; vertical-align:middle;" /> | <img src="images/2.3.6.png" alt="MDK" width="720" style="max-height:1180px; object-fit:contain; vertical-align:middle;" /> |
 
 ## Summary
 
