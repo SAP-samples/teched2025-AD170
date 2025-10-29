@@ -510,7 +510,7 @@ To navigate from the Incident Detail page to a new page for modifying incident i
 
 ### Exercise 3.6 - Redeploy the application
 
-Now that you have created the Edit page it is time to deploy the changes to see the resuPlt.
+Now that you have created the Edit page it is time to deploy the changes to see the result.
 
 1. Click the **Deploy** option in the editor's header area to deploy your changes to Mobile Services.
 
