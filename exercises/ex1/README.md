@@ -20,8 +20,6 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 
 1. Launch the [SAP Build Lobby](https://ad170-k6zq89xc.eu10.build.cloud.sap/lobby) in the Google Chrome browser.
 
-2. Click `tdct3ched1.accounts.ondemand.com` to continue for dry run. SAP IT will remove the default identity provider couple of days before TechEd starts. This step won't be needed anymore. [**to be updated**] 
-
 2. Provide the login credentials that were shared with you during the session. 
 
     ![MDK](images/1.1.1.png)
@@ -138,7 +136,6 @@ You will now run the initial application on the Mobile client installed on your 
 | 1. Launch **`Mobile Svcs`** app on your mobile device. Tap **Agree** on `End User License Agreement and Privacy Statement`. | <img src="images/1.5.1.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.2.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
 | 2. Tap **Scan** to start the device camera for scanning the onboarding QR code and grant permission to access the camera. Please note, if you already have the MDK client on-boarded, tap *Get Started* and *Scan new QR code* to continue. | <img src="images/1.5.3.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.4.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
 | 3. Once the scan succeeds, tap **Continue**. | <img src="images/1.5.5.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.6.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
-| 4. Click `tdct3ched1.accounts.ondemand.com` to continue for dry run. SAP IT will remove the default identity provider couple of days before TechEd starts. This step won't be needed anymore. [**to be updated**] |  | |
 | 4. Use the login credentials that were shared with you during the session to log into SAP BTP. | <img src="images/1.5.7.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.8.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
 | 5. Create a passcode that is at least 5 characters long to unlock the app, and then tap **Next**. | <img src="images/1.5.9.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.10.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
 | 6. Confirm the passcode and tap **Done**. | <img src="images/1.5.11.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> | <img src="images/1.5.12.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
