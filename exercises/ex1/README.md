@@ -34,12 +34,12 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 
 5. Provide the below information and click **review**.
 
-    | Field | Value |
-    |----|----|
-    | `Clone from Git` | `https://github.com/jitendrakansal/MDKApp.git`  |
-    | `Name` | `MDKApp` |  
-    | `Description` | `SAP TechEd 2025`  |
-    | `Dev Space` | Leave the default name as it is |  
+    | Field | Value | Comments |
+    |----|----| --- | 
+    | `Clone from Git` | `https://github.com/jitendrakansal/MDKApp.git`  | |
+    | `Name` | `XXXMDKApp` |  Replace xxx with your student number (last 3 digits of your login email). |
+    | `Description` | `App created by XXX`  | Replace xxx with your student number (last 3 digits of your login email). |
+    | `Dev Space` | Leave the default name as it is |  |
 
      >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one.
 
@@ -85,7 +85,11 @@ You will now deploy the application definitions to SAP Mobile Services.
 
     ![MDK](images/1.3.3.png)
 
-4. A new tab will open in your browser. Enter  `tdct3ched1-platform` as the origin key for the custom IdP, then click on **Sign in with alternative identity provider**.
+4. A new tab will open in your browser. Enter  the following text as the origin key for the custom IdP, then click on **Sign in with alternative identity provider**.
+
+    ```url
+    tdct3ched1-platform
+    ```
 
     ![MDK](images/1.3.4.png)
 
@@ -105,7 +109,7 @@ You will now deploy the application definitions to SAP Mobile Services.
 
     ![MDK](images/1.3.8.png) 
 
-9. Select **Standard** Mobile Services Landscape.
+9.  Select **Standard** Mobile Services Landscape.
 
     ![MDK](images/1.3.9.png)  
 
