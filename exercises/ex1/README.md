@@ -37,8 +37,8 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
     | Field | Value | Comments |
     |----|----| --- | 
     | `Clone from Git` | `https://github.com/jitendrakansal/MDKApp.git`  | |
-    | `Name` | `XXXMDKApp` |  Replace xxx with your student number (last 3 digits of your login email). |
-    | `Description` | `App created by XXX`  | Replace xxx with your student number (last 3 digits of your login email). |
+    | `Name` | `XXXMDKApp` |  Replace xxx with your student number |
+    | `Description` | `App created by XXX`  | Replace xxx with your student number  |
     | `Dev Space` | Leave the default name as it is |  |
 
      >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one.

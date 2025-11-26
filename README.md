@@ -8,7 +8,7 @@ SAP Build is a business application development and automation solution with a c
 This hands-on exercise will assist you in learning how to **build mobile applications using SAP Build**.
 
 ## Description
-Accelerate development by using **SAP Build** to consume a SAP Cloud Application Programming (CAP) Model service for mobile development. Build a native, cross-platform mobile application using **SAP Mobile Development Kit** and enhance it using generativce AI capabilities via Joule Assistant.
+Accelerate development by using **SAP Build** to consume a SAP Cloud Application Programming (CAP) Model service for mobile development. Build a native, cross-platform mobile application using **SAP Mobile Development Kit** and enhance it using generative AI capabilities via Joule Assistant.
 
 ## Requirements
 In order to complete the session exercises below, first complete the [pre-requisites](./exercises/ex0/README.md).
